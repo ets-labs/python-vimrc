@@ -8,7 +8,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'		            " let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'                  " let Vundle manage Vundle, required
 
 "-------------------=== Code/Project navigation ===-------------
 Plugin 'scrooloose/nerdtree' 	    	    " Project and file navigation
@@ -18,13 +18,13 @@ Plugin 'majutsushi/tagbar'          	    " Class/module browser
 Plugin 'bling/vim-airline'   	    	    " Lean & mean status/tabline for vim
 Plugin 'fisadev/FixedTaskList.vim'  	    " Pending tasks list
 Plugin 'rosenfeld/conque-term'      	    " Consoles as buffers
-Plugin 'tpope/vim-surround'	   	            " Parentheses, brackets, quotes, XML tags, and more
+Plugin 'tpope/vim-surround'                 " Parentheses, brackets, quotes, XML tags, and more
 
 "-------------------=== Snippets support ===--------------------
-Plugin 'garbas/vim-snipmate'		        " Snippets manager
-Plugin 'MarcWeber/vim-addon-mw-utils'	    " dependencies #1
-Plugin 'tomtom/tlib_vim'		            " dependencies #2
-Plugin 'honza/vim-snippets'		            " snippets repo
+Plugin 'garbas/vim-snipmate'                " Snippets manager
+Plugin 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
+Plugin 'tomtom/tlib_vim'                    " dependencies #2
+Plugin 'honza/vim-snippets'                 " snippets repo
 
 "-------------------=== Languages support ===-------------------
 Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
@@ -32,14 +32,14 @@ Plugin 'tpope/vim-commentary'               " Comment stuff out
 Plugin 'mitsuhiko/vim-sparkup'              " Sparkup(XML/jinja/htlm-django/etc.) support
 
 "-------------------=== Python  ===-----------------------------
-Plugin 'klen/python-mode'	                " Python mode (docs, refactor, lints...)
-Plugin 'davidhalter/jedi-vim' 		        " Jedi-vim autocomplete plugin
-Plugin 'mitsuhiko/vim-jinja'		        " Jinja support for vim
+Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
+Plugin 'davidhalter/jedi-vim'               " Jedi-vim autocomplete plugin
+Plugin 'mitsuhiko/vim-jinja'                " Jinja support for vim
 Plugin 'mitsuhiko/vim-python-combined'      " Combined Python 2/3 for Vim
 Plugin 'hynek/vim-python-pep8-indent'       " PEP8 indent
 Plugin 'jmcantrell/vim-virtualenv'          " Virtualenv support in VIM
 
-call vundle#end()            		        " required
+call vundle#end()                           " required
 filetype on
 filetype plugin on
 filetype plugin indent on
@@ -72,7 +72,7 @@ set noswapfile 	                            " no swap files
 
 set backspace=indent,eol,start              " backspace removes all (indents, EOLs, start) What is start?
 
-set scrolloff=10	                        " let 10 lines before/after cursor during scroll
+set scrolloff=10                            " let 10 lines before/after cursor during scroll
 
 set clipboard=unnamedplus                   " use system clipboard
 
