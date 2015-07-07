@@ -32,9 +32,8 @@ vim
 
 - Install plugins.
 
-Inside VIM:
-
 ```bash
+#Inside VIM
 :PluginInstall
 ```
 
