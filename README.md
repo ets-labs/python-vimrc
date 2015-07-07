@@ -1,5 +1,6 @@
 # .VIMRC
-VIM Configuration
+
+VIM Configuration for Python Development.
 
 
 ### Installation guide
