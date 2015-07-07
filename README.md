@@ -18,12 +18,16 @@ cp vimrc/.vimrc ~/.vimrc
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-- Run VIM and install plugins
-
+- Run VIM
 ```bash
 vim
+```
 
-# inside VIM
+ # Install plugins
+
+Inside VIM:
+
+```bash
 :PluginInstall
 ```
 
