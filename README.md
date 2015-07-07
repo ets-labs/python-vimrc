@@ -1,11 +1,10 @@
-# vimrc
+# .VIMRC
 VIM Configuration
 
 
-Installation guide
-==================
+### Installation guide
 
-1. Put `.vimrc` file to home dir.
+- Put `.vimrc` file to home dir.
 
 ```bash
 cd
@@ -13,13 +12,13 @@ git clone https://github.com/rmk135/vimrc.git
 cp vimrc/.vimrc ~/.vimrc
 ```
 
-2. Setup Vundle.
+- Setup Vundle.
 
 ```bash
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-3. Run VIM and install plugins
+- Run VIM and install plugins
 
 ```bash
 vim
@@ -28,5 +27,5 @@ vim
 :PluginInstall
 ```
 
-4. Use VIM!
+- Use VIM!
 
