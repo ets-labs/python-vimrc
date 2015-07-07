@@ -13,10 +13,10 @@ git clone https://github.com/rmk135/vimrc.git
 cp vimrc/.vimrc ~/.vimrc
 ```
 
-- Put colorschemes to `.vim/colors`.
+- Put color schemes to `.vim/colors`.
 
 ```bash
-cp -r vimrc/.vim/colors ~/.vim/colors
+mkdir ~/.vim && cp -r vimrc/.vim ~/
 ```
 
 - Setup Vundle.
