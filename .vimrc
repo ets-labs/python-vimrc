@@ -95,7 +95,7 @@ set hlsearch	                            " highlight search results
 let g:airline_theme='badwolf'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='unique_tail'
-" let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
 
 "=====================================================
 "" TagBar settings
@@ -169,7 +169,7 @@ let g:pymode_folding=0
 let g:pymode_run=0
 
 " jedi-vim
-let g:jedi#popup_select_first=1             " Disable choose first option on autocomplete
+let g:jedi#popup_select_first=0             " Disable choose first option on autocomplete
 let g:jedi#show_call_signatures=1           " Show call signatures
 let g:jedi#popup_on_dot=1                   " Enable autocomplete on dot
 
