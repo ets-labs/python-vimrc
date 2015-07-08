@@ -28,6 +28,9 @@ vim
 
 # Install VIM Plugins (inside VIM)
 :PluginInstall
+
+# Rehash terminal
+hash -r
 ```
 
 Keep calm and use VIM!
