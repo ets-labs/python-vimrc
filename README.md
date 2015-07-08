@@ -1,41 +1,34 @@
 # .VIMRC
 
+
 VIM Configuration for Python Development.
 
+### Requirements
+
+- VIM 7.4
+- git
 
 ### Installation guide
 
-- Put `.vimrc` file to home dir.
-
 ```bash
-cd
-git clone https://github.com/rmk135/vimrc.git
-cp vimrc/.vimrc ~/.vimrc
-```
+# Clone repo:
+git clone https://github.com/rmk135/vimrc.git ~/vimrc
 
-- Put color schemes to `.vim/colors`.
+# Copy .vimrc file to home dir
+cp ~/vimrc/.vimrc ~/.vimrc
 
-```bash
-mkdir ~/.vim && cp -r vimrc/.vim ~/
-```
+# Copy color schemes to .vim home dir
+mkdir ~/.vim && cp -r ~/vimrc/.vim ~/
 
-- Setup Vundle.
-
-```bash
+# Setup Vundle (Vim Plugin Manager)
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
 
-- Run VIM.
-```bash
+# Run VIM (ignore errors)
 vim
-```
 
-- Install plugins.
-
-```bash
-#Inside VIM
+# Install VIM Plugins (inside VIM)
 :PluginInstall
 ```
 
-- Use VIM!
+Keep calm and use VIM!
 

@@ -100,15 +100,18 @@ let g:airline_powerline_fonts=1
 "=====================================================
 "" TagBar settings
 "=====================================================
-let g:tagbar_autofocus=0                    " Tagbar focus on open
-autocmd vimenter * TagbarToggle             " Tagbar autoload
+let g:tagbar_autofocus=0
+let g:tagbar_width=40
+autocmd BufWinEnter *.py :call tagbar#autoopen(0)
+autocmd BufWinLeave *.py :TagbarClose
+nmap <F8> :TagbarToggle<CR>
 
 "=====================================================
 "" NERDTree settings
 "=====================================================
 let NERDTreeIgnore=['\.pyc$', '\.pyo$']     " Ignore files in NERDTree
-autocmd vimenter * NERDTree                 " NERDTree autoload
-autocmd vimenter * if !argc() | NERDTree | endif
+autocmd VimEnter * NERDTree                 " NERDTree autoload
+autocmd VimEnter * if !argc() | NERDTree | endif
 
 "=====================================================
 "" SnipMate settings
