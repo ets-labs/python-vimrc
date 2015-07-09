@@ -102,7 +102,7 @@ let g:airline_powerline_fonts=1
 "=====================================================
 let g:tagbar_autofocus=0
 let g:tagbar_width=42
-autocmd BufWinEnter *.py :call tagbar#autoopen(0)
+autocmd BufEnter *.py :call tagbar#autoopen(0)
 autocmd BufWinLeave *.py :TagbarClose
 nmap <F8> :TagbarToggle<CR>
 
