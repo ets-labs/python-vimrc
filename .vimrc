@@ -74,7 +74,7 @@ set backspace=indent,eol,start              " backspace removes all (indents, EO
 
 set scrolloff=10                            " let 10 lines before/after cursor during scroll
 
-set clipboard=unnamedplus                   " use system clipboard
+set clipboard=unnamed                       " use system clipboard
 
 "=====================================================
 "" Tabs / Buffers settings
@@ -126,9 +126,12 @@ let g:snippets_dir='~/.vim/vim-snippets/snippets'
 set completeopt-=preview                    " remove omnicompletion dropdown
 
 " rope
-let g:pymode_rope=0                         " Rope autocompletion is turned off
-let g:pymode_rope_completion=0              " Rope autocompletion is turned off
-let g:pymode_rope_complete_on_dot=0         " Rope autocompletion is turned off
+let g:pymode_rope=0
+let g:pymode_rope_completion=0
+let g:pymode_rope_complete_on_dot=0
+let g:pymode_rope_auto_project=0
+let g:pymode_rope_enable_autoimport=0
+let g:pymode_rope_autoimport_generate=0
 
 " documentation
 let g:pymode_doc=0
@@ -136,7 +139,7 @@ let g:pymode_doc_key='K'
 
 " flake8
 let g:pymode_lint=1
-let g:pymode_lint_checker='flake8'
+let g:pymode_lint_checker='flake8,pep257'
 let g:pymode_lint_write=0                   " run lints after file save
 let g:pymode_lint_ignore=''                 " ignore lint errors
 
