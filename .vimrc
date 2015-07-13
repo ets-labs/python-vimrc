@@ -30,6 +30,7 @@ Plugin 'honza/vim-snippets'                 " snippets repo
 Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
 Plugin 'tpope/vim-commentary'               " Comment stuff out
 Plugin 'mitsuhiko/vim-sparkup'              " Sparkup(XML/jinja/htlm-django/etc.) support
+Plugin 'Rykka/riv.vim'                      " ReStructuredText plugin
 
 "-------------------=== Python  ===-----------------------------
 Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
@@ -120,6 +121,11 @@ autocmd VimEnter * if !argc() | NERDTree | endif
 let g:snippets_dir='~/.vim/vim-snippets/snippets'
 
 "=====================================================
+"" Riv.vim settings
+"=====================================================
+let g:riv_disable_folding=1
+
+"=====================================================
 "" Python settings
 "=====================================================
 
@@ -164,9 +170,9 @@ let g:pymode_syntax_space_errors=g:pymode_syntax_all
 " highlight 'long' lines (>= 80 symbols) in python files
 augroup vimrc_autocmds
     autocmd!
-    autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
-    autocmd FileType python match Excess /\%81v.*/
-    autocmd FileType python set nowrap
+    autocmd FileType python,rst highlight Excess ctermbg=DarkGrey guibg=Black
+    autocmd FileType python,rst match Excess /\%81v.*/
+    autocmd FileType python,rst set nowrap
 augroup END
 
 " code folding
