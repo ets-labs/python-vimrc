@@ -83,8 +83,9 @@ set clipboard=unnamed                       " use system clipboard
 tab sball
 set switchbuf=useopen
 set laststatus=2
-nnoremap <C-N> :bnext<CR>
-nnoremap <C-P> :bprev<CR>
+nmap <F9> :bprev<CR>
+nmap <F10> :bnext<CR>
+nmap <silent> <leader>q :SyntasticCheck # <CR> :bp <BAR> bd #<CR>
 
 "" Search settings
 "=====================================================
@@ -106,7 +107,6 @@ let g:tagbar_autofocus=0
 let g:tagbar_width=42
 autocmd BufEnter *.py :call tagbar#autoopen(0)
 autocmd BufWinLeave *.py :TagbarClose
-nmap <F8> :TagbarToggle<CR>
 
 "=====================================================
 "" NERDTree settings
@@ -145,8 +145,8 @@ let g:pymode_rope_autoimport_generate=0
 let g:pymode_doc=0
 let g:pymode_doc_key='K'
 
-" flake8
-let g:pymode_lint=1
+" lints
+let g:pymode_lint=0
 let g:pymode_lint_checker='flake8,pep257'
 let g:pymode_lint_write=0                   " run lints after file save
 let g:pymode_lint_ignore=''                 " ignore lint errors
@@ -197,5 +197,5 @@ let g:syntastic_error_symbol='X'
 let g:syntastic_style_error_symbol='X'
 let g:syntastic_warning_symbol='x'
 let g:syntastic_style_warning_symbol='x'
-let g:syntastic_python_checkers = ['pyflakes', 'pep257', 'python']
+let g:syntastic_python_checkers = ['flake8', 'pep257', 'python']
 
