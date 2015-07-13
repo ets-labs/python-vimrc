@@ -83,8 +83,9 @@ set clipboard=unnamed                       " use system clipboard
 tab sball
 set switchbuf=useopen
 set laststatus=2
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-P> :bprev<CR>
 
-"=====================================================
 "" Search settings
 "=====================================================
 set incsearch	                            " incremental search
