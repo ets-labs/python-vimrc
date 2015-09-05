@@ -17,6 +17,7 @@ Plugin 'kien/ctrlp.vim'                     " Fast transitions on project files
 
 "-------------------=== Other ===-------------------------------
 Plugin 'bling/vim-airline'   	    	    " Lean & mean status/tabline for vim
+Plugin 'Lokaltog/powerline'                 " Powerline fonts plugin
 Plugin 'fisadev/FixedTaskList.vim'  	    " Pending tasks list
 Plugin 'rosenfeld/conque-term'      	    " Consoles as buffers
 Plugin 'tpope/vim-surround'                 " Parentheses, brackets, quotes, XML tags, and more
@@ -141,6 +142,7 @@ let g:pymode_rope_complete_on_dot=0
 let g:pymode_rope_auto_project=0
 let g:pymode_rope_enable_autoimport=0
 let g:pymode_rope_autoimport_generate=0
+let g:pymode_rope_guess_project=0
 
 " documentation
 let g:pymode_doc=0
@@ -185,7 +187,7 @@ let g:pymode_run=0
 
 " jedi-vim
 let g:jedi#popup_select_first=0             " Disable choose first option on autocomplete
-let g:jedi#show_call_signatures=1           " Show call signatures
+let g:jedi#show_call_signatures=0           " Show call signatures
 let g:jedi#popup_on_dot=1                   " Enable autocomplete on dot
 
 " syntastic
