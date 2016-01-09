@@ -24,7 +24,7 @@ Plugin 'Lokaltog/powerline'                 " Powerline fonts plugin
 Plugin 'fisadev/FixedTaskList.vim'  	    " Pending tasks list
 Plugin 'rosenfeld/conque-term'      	    " Consoles as buffers
 Plugin 'tpope/vim-surround'                 " Parentheses, brackets, quotes, XML tags, and more
-Plugin 'git@github.com:sheerun/vim-wombat-scheme.git'   " Wombat colorscheme
+Plugin 'flazz/vim-colorschemes'             " Colorschemes
 
 "-------------------=== Snippets support ===--------------------
 Plugin 'garbas/vim-snipmate'                " Snippets manager
@@ -55,6 +55,10 @@ filetype plugin indent on
 "" General settings
 "=====================================================
 syntax enable                               " syntax highlight
+
+set t_Co=256                                " set 256 colors
+colorscheme wombat256mod                    " set color scheme
+
 set number                                  " show line numbers
 set ruler
 set ttyfast                                 " terminal acceleration
@@ -67,9 +71,6 @@ set autoindent                              " indent when moving to the next lin
 
 set cursorline                              " shows line under the cursor's line
 set showmatch                               " shows matching part of bracket pairs (), [], {}
-
-set t_Co=256                                " set 256 colors
-colorscheme wombat                          " set color scheme
 
 set enc=utf-8	                            " utf-8 by default
 
