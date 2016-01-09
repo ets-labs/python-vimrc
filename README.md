@@ -7,18 +7,21 @@ VIM Configuration for Python Development.
 
 - VIM 7.4
 - git
+- bash 3.2+
 
 ### Installation guide
 
 ```bash
 # Clone repo:
-git clone https://github.com/rmk135/vimrc.git ~/vimrc
+git clone https://github.com/rmk135/vimrc.git ~/.vim
 
 # Execute init script:
-bash ~/vimrc/init.sh
+bash ~/.vim/init.sh
 
 # Rehash terminal
 hash -r
 ```
+
+During execution of init script do not worry about error messages. When it occurs just press enter and wait till all plugins are installed.
 
 Keep calm and use VIM!

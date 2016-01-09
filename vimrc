@@ -1,3 +1,6 @@
+let $vimhome=fnamemodify(resolve(expand("~/.vimrc")), ':p:h')
+let $vundle=$vimhome."/bundle/Vundle.vim"
+
 " Be iMproved
 set nocompatible
 
@@ -5,7 +8,7 @@ set nocompatible
 "" Vundle settings
 "=====================================================
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=$vundle
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'               " let Vundle manage Vundle, required
