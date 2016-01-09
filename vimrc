@@ -1,3 +1,6 @@
+let $vimhome=fnamemodify(resolve(expand("~/.vimrc")), ':p:h')
+let $vundle=$vimhome."/bundle/Vundle.vim"
+
 " Be iMproved
 set nocompatible
 
@@ -5,10 +8,10 @@ set nocompatible
 "" Vundle settings
 "=====================================================
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=$vundle
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'                  " let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'               " let Vundle manage Vundle, required
 
 "-------------------=== Code/Project navigation ===-------------
 Plugin 'scrooloose/nerdtree' 	    	    " Project and file navigation
@@ -21,6 +24,7 @@ Plugin 'Lokaltog/powerline'                 " Powerline fonts plugin
 Plugin 'fisadev/FixedTaskList.vim'  	    " Pending tasks list
 Plugin 'rosenfeld/conque-term'      	    " Consoles as buffers
 Plugin 'tpope/vim-surround'                 " Parentheses, brackets, quotes, XML tags, and more
+Plugin 'git@github.com:sheerun/vim-wombat-scheme.git'   " Wombat colorscheme
 
 "-------------------=== Snippets support ===--------------------
 Plugin 'garbas/vim-snipmate'                " Snippets manager
@@ -65,7 +69,7 @@ set cursorline                              " shows line under the cursor's line
 set showmatch                               " shows matching part of bracket pairs (), [], {}
 
 set t_Co=256                                " set 256 colors
-colorscheme wombat256                       " set color scheme
+colorscheme wombat                          " set color scheme
 
 set enc=utf-8	                            " utf-8 by default
 
@@ -201,4 +205,3 @@ let g:syntastic_style_error_symbol='X'
 let g:syntastic_warning_symbol='x'
 let g:syntastic_style_warning_symbol='x'
 let g:syntastic_python_checkers = ['flake8', 'pep257', 'python']
-
