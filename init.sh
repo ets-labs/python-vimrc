@@ -24,7 +24,7 @@ else
 fi
 
 printf '%s' "$GREEN"
-source hellopicture
+source "$VIMHOME/hellopicture"
 printf "\n${BLUE}%s${NORMAL}\n" "Initializing vim configuration..."
 
 makeSimlink () {
