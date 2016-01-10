@@ -1,3 +1,14 @@
+
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+"                                                                              "
+"                       __   _ _ _ __ ___  _ __ ___                            "
+"                       \ \ / / | '_ ` _ \| '__/ __|                           "
+"                        \ V /| | | | | | | | | (__                            "
+"                         \_/ |_|_| |_| |_|_|  \___|                           "
+"                                                                              "
+"                                                                              "
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
 let $vimhome=fnamemodify(resolve(expand("~/.vimrc")), ':p:h')
 let $vundle=$vimhome."/bundle/Vundle.vim"
 
@@ -11,40 +22,40 @@ filetype off
 set rtp+=$vundle
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'               " let Vundle manage Vundle, required
+    Plugin 'VundleVim/Vundle.vim'               " let Vundle manage Vundle, required
 
-"-------------------=== Code/Project navigation ===-------------
-Plugin 'scrooloose/nerdtree' 	    	    " Project and file navigation
-Plugin 'majutsushi/tagbar'          	    " Class/module browser
-Plugin 'kien/ctrlp.vim'                     " Fast transitions on project files
+    "-------------------=== Code/Project navigation ===-------------
+    Plugin 'scrooloose/nerdtree'                " Project and file navigation
+    Plugin 'majutsushi/tagbar'                  " Class/module browser
+    Plugin 'kien/ctrlp.vim'                     " Fast transitions on project files
 
-"-------------------=== Other ===-------------------------------
-Plugin 'bling/vim-airline'   	    	    " Lean & mean status/tabline for vim
-Plugin 'Lokaltog/powerline'                 " Powerline fonts plugin
-Plugin 'fisadev/FixedTaskList.vim'  	    " Pending tasks list
-Plugin 'rosenfeld/conque-term'      	    " Consoles as buffers
-Plugin 'tpope/vim-surround'                 " Parentheses, brackets, quotes, XML tags, and more
-Plugin 'flazz/vim-colorschemes'             " Colorschemes
+    "-------------------=== Other ===-------------------------------
+    Plugin 'bling/vim-airline'                  " Lean & mean status/tabline for vim
+    Plugin 'Lokaltog/powerline'                 " Powerline fonts plugin
+    Plugin 'fisadev/FixedTaskList.vim'          " Pending tasks list
+    Plugin 'rosenfeld/conque-term'              " Consoles as buffers
+    Plugin 'tpope/vim-surround'                 " Parentheses, brackets, quotes, XML tags, and more
+    Plugin 'flazz/vim-colorschemes'             " Colorschemes
 
-"-------------------=== Snippets support ===--------------------
-Plugin 'garbas/vim-snipmate'                " Snippets manager
-Plugin 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
-Plugin 'tomtom/tlib_vim'                    " dependencies #2
-Plugin 'honza/vim-snippets'                 " snippets repo
+    "-------------------=== Snippets support ===--------------------
+    Plugin 'garbas/vim-snipmate'                " Snippets manager
+    Plugin 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
+    Plugin 'tomtom/tlib_vim'                    " dependencies #2
+    Plugin 'honza/vim-snippets'                 " snippets repo
 
-"-------------------=== Languages support ===-------------------
-Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
-Plugin 'tpope/vim-commentary'               " Comment stuff out
-Plugin 'mitsuhiko/vim-sparkup'              " Sparkup(XML/jinja/htlm-django/etc.) support
-Plugin 'Rykka/riv.vim'                      " ReStructuredText plugin
+    "-------------------=== Languages support ===-------------------
+    Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
+    Plugin 'tpope/vim-commentary'               " Comment stuff out
+    Plugin 'mitsuhiko/vim-sparkup'              " Sparkup(XML/jinja/htlm-django/etc.) support
+    Plugin 'Rykka/riv.vim'                      " ReStructuredText plugin
 
-"-------------------=== Python  ===-----------------------------
-Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
-Plugin 'davidhalter/jedi-vim'               " Jedi-vim autocomplete plugin
-Plugin 'mitsuhiko/vim-jinja'                " Jinja support for vim
-Plugin 'mitsuhiko/vim-python-combined'      " Combined Python 2/3 for Vim
-Plugin 'hynek/vim-python-pep8-indent'       " PEP8 indent
-Plugin 'jmcantrell/vim-virtualenv'          " Virtualenv support in VIM
+    "-------------------=== Python  ===-----------------------------
+    Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
+    Plugin 'davidhalter/jedi-vim'               " Jedi-vim autocomplete plugin
+    Plugin 'mitsuhiko/vim-jinja'                " Jinja support for vim
+    Plugin 'mitsuhiko/vim-python-combined'      " Combined Python 2/3 for Vim
+    Plugin 'hynek/vim-python-pep8-indent'       " PEP8 indent
+    Plugin 'jmcantrell/vim-virtualenv'          " Virtualenv support in VIM
 
 call vundle#end()                           " required
 filetype on
