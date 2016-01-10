@@ -25,15 +25,15 @@ call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'               " let Vundle manage Vundle, required
 
     "-------------------=== Code/Project navigation ===-------------
-    Plugin 'scrooloose/nerdtree' 	    	    " Project and file navigation
-    Plugin 'majutsushi/tagbar'          	    " Class/module browser
+    Plugin 'scrooloose/nerdtree'                " Project and file navigation
+    Plugin 'majutsushi/tagbar'                  " Class/module browser
     Plugin 'kien/ctrlp.vim'                     " Fast transitions on project files
 
     "-------------------=== Other ===-------------------------------
-    Plugin 'bling/vim-airline'   	    	    " Lean & mean status/tabline for vim
+    Plugin 'bling/vim-airline'                  " Lean & mean status/tabline for vim
     Plugin 'Lokaltog/powerline'                 " Powerline fonts plugin
-    Plugin 'fisadev/FixedTaskList.vim'  	    " Pending tasks list
-    Plugin 'rosenfeld/conque-term'      	    " Consoles as buffers
+    Plugin 'fisadev/FixedTaskList.vim'          " Pending tasks list
+    Plugin 'rosenfeld/conque-term'              " Consoles as buffers
     Plugin 'tpope/vim-surround'                 " Parentheses, brackets, quotes, XML tags, and more
     Plugin 'flazz/vim-colorschemes'             " Colorschemes
 
