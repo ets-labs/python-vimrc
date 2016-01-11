@@ -16,7 +16,7 @@ Installation guide
 .. code-block:: bash
 
     # Clone repo:
-    git clone https://github.com/rmk135/vimrc.git ~/.vim
+    git clone https://github.com/ets-labs/vimrc.git ~/.vim
 
     # Execute init script:
     bash ~/.vim/init.sh
