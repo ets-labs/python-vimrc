@@ -131,8 +131,7 @@ autocmd BufWinLeave *.py :TagbarClose
 "=====================================================
 let NERDTreeIgnore=['\.pyc$', '\.pyo$']     " Ignore files in NERDTree
 let NERDTreeWinSize=40
-autocmd VimEnter * NERDTree                 " NERDTree autoload
-autocmd VimEnter * if !argc() | NERDTree | endif
+autocmd VimEnter * if !argc() | NERDTree | endif  " Load NERDTree only if vim is run without arguments
 
 "=====================================================
 "" SnipMate settings
