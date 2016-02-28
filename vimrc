@@ -166,7 +166,7 @@ let g:pymode_doc_key='K'
 
 " lints
 let g:pymode_lint=0
-let g:pymode_lint_checker='flake8,pep257'
+let g:pymode_lint_checker='flake8,pydocstyle'
 let g:pymode_lint_write=0                   " run lints after file save
 let g:pymode_lint_ignore=''                 " ignore lint errors
 
@@ -216,4 +216,4 @@ let g:syntastic_error_symbol='X'
 let g:syntastic_style_error_symbol='X'
 let g:syntastic_warning_symbol='x'
 let g:syntastic_style_warning_symbol='x'
-let g:syntastic_python_checkers = ['flake8', 'pep257', 'python']
+let g:syntastic_python_checkers = ['flake8', 'pydocstyle', 'python']
