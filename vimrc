@@ -166,9 +166,6 @@ let g:pymode_doc_key='K'
 
 " lints
 let g:pymode_lint=0
-let g:pymode_lint_checker='flake8,pydocstyle'
-let g:pymode_lint_write=0                   " run lints after file save
-let g:pymode_lint_ignore=''                 " ignore lint errors
 
 " virtualenv
 let g:pymode_virtualenv=1
