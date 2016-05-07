@@ -70,6 +70,13 @@ echo "${NORMAL}"
       printf "${BLUE}%s${NORMAL}\n" "Installing Vundle..."
       env git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git "$VIM/bundle/Vundle.vim"
   fi
+  
+  if [ ! -f $VIM/colors/wombat256mod.vim ]; then
+      if [ ! -d $VIM/colors/ ]; then 
+          mkdir -p $VIM/colors
+      fi
+      wget 'http://www.vim.org/scripts/download_script.php?src_id=13400' -O $VIM/colors/wombat256mod.vim
+  fi
 
   printf "${GREEN}%s${NORMAL}\n" "Vimrc has been configured ;)"
   printf "${YELLOW}%s${NORMAL}\n" "Do not worry about error messages. When it occurs just press enter and wait till all plugins are installed."
