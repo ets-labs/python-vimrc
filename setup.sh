@@ -71,10 +71,8 @@ echo "${NORMAL}"
       env git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git "$VIM/bundle/Vundle.vim"
   fi
   
-  if [ ! -f $VIM/colors/wombat256mod.vim ]
-      then
-      if [ ! -d $VIM/colors/ ]
-      then 
+  if [ ! -f $VIM/colors/wombat256mod.vim ]; then
+      if [ ! -d $VIM/colors/ ]; then 
           mkdir -p $VIM/colors
       fi
       wget 'http://www.vim.org/scripts/download_script.php?src_id=13400' -O $VIM/colors/wombat256mod.vim
