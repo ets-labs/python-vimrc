@@ -54,7 +54,6 @@ call vundle#begin()
     Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
     Plugin 'davidhalter/jedi-vim'               " Jedi-vim autocomplete plugin
     Plugin 'mitsuhiko/vim-jinja'                " Jinja support for vim
-    Plugin 'mitsuhiko/vim-python-combined'      " Combined Python 2/3 for Vim
 
 call vundle#end()                           " required
 filetype on
