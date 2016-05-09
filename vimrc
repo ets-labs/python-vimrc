@@ -55,7 +55,6 @@ call vundle#begin()
     Plugin 'davidhalter/jedi-vim'               " Jedi-vim autocomplete plugin
     Plugin 'mitsuhiko/vim-jinja'                " Jinja support for vim
     Plugin 'mitsuhiko/vim-python-combined'      " Combined Python 2/3 for Vim
-    Plugin 'hynek/vim-python-pep8-indent'       " PEP8 indent
 
 call vundle#end()                           " required
 filetype on
@@ -194,6 +193,9 @@ augroup END
 
 " code folding
 let g:pymode_folding=0
+
+" pep8 indents
+let g:pymode_indent=1
 
 " code running
 let g:pymode_run=0
