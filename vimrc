@@ -56,7 +56,6 @@ call vundle#begin()
     Plugin 'mitsuhiko/vim-jinja'                " Jinja support for vim
     Plugin 'mitsuhiko/vim-python-combined'      " Combined Python 2/3 for Vim
     Plugin 'hynek/vim-python-pep8-indent'       " PEP8 indent
-    Plugin 'jmcantrell/vim-virtualenv'          " Virtualenv support in VIM
 
 call vundle#end()                           " required
 filetype on
