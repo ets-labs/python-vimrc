@@ -45,7 +45,6 @@ call vundle#begin()
     Plugin 'honza/vim-snippets'                 " snippets repo
 
     "-------------------=== Languages support ===-------------------
-    Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
     Plugin 'tpope/vim-commentary'               " Comment stuff out
     Plugin 'mitsuhiko/vim-sparkup'              " Sparkup(XML/jinja/htlm-django/etc.) support
     Plugin 'Rykka/riv.vim'                      " ReStructuredText plugin
@@ -53,10 +52,7 @@ call vundle#begin()
     "-------------------=== Python  ===-----------------------------
     Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
     Plugin 'davidhalter/jedi-vim'               " Jedi-vim autocomplete plugin
-    Plugin 'mitsuhiko/vim-jinja'                " Jinja support for vim
-    Plugin 'mitsuhiko/vim-python-combined'      " Combined Python 2/3 for Vim
-    Plugin 'hynek/vim-python-pep8-indent'       " PEP8 indent
-    Plugin 'jmcantrell/vim-virtualenv'          " Virtualenv support in VIM
+    Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
 
 call vundle#end()                           " required
 filetype on
@@ -176,14 +172,24 @@ let g:pymode_breakpoint=1
 let g:pymode_breakpoint_key='<leader>b'
 
 " syntax highlight
-let python_highlight_all=1
-let python_highlight_exceptions=1
-let python_highlight_builtins=1
-let python_slow_sync=1
 let g:pymode_syntax=1
+let g:pymode_syntax_slow_sync=1
 let g:pymode_syntax_all=1
+let g:pymode_syntax_print_as_function=g:pymode_syntax_all
+let g:pymode_syntax_highlight_async_await=g:pymode_syntax_all
+let g:pymode_syntax_highlight_equal_operator=g:pymode_syntax_all
+let g:pymode_syntax_highlight_stars_operator=g:pymode_syntax_all
+let g:pymode_syntax_highlight_self=g:pymode_syntax_all
 let g:pymode_syntax_indent_errors=g:pymode_syntax_all
+let g:pymode_syntax_string_formatting=g:pymode_syntax_all
 let g:pymode_syntax_space_errors=g:pymode_syntax_all
+let g:pymode_syntax_string_format=g:pymode_syntax_all
+let g:pymode_syntax_string_templates=g:pymode_syntax_all
+let g:pymode_syntax_doctests=g:pymode_syntax_all
+let g:pymode_syntax_builtin_objs=g:pymode_syntax_all
+let g:pymode_syntax_builtin_types=g:pymode_syntax_all
+let g:pymode_syntax_highlight_exceptions=g:pymode_syntax_all
+let g:pymode_syntax_docstrings=g:pymode_syntax_all
 
 " highlight 'long' lines (>= 80 symbols) in python files
 augroup vimrc_autocmds
@@ -195,6 +201,9 @@ augroup END
 
 " code folding
 let g:pymode_folding=0
+
+" pep8 indents
+let g:pymode_indent=1
 
 " code running
 let g:pymode_run=0
@@ -210,6 +219,7 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_enable_signs=1
 let g:syntastic_check_on_wq=0
 let g:syntastic_aggregate_errors=1
+let g:syntastic_loc_list_height=5
 let g:syntastic_error_symbol='X'
 let g:syntastic_style_error_symbol='X'
 let g:syntastic_warning_symbol='x'
