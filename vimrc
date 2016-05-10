@@ -45,7 +45,6 @@ call vundle#begin()
     Plugin 'honza/vim-snippets'                 " snippets repo
 
     "-------------------=== Languages support ===-------------------
-    Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
     Plugin 'tpope/vim-commentary'               " Comment stuff out
     Plugin 'mitsuhiko/vim-sparkup'              " Sparkup(XML/jinja/htlm-django/etc.) support
     Plugin 'Rykka/riv.vim'                      " ReStructuredText plugin
@@ -53,6 +52,7 @@ call vundle#begin()
     "-------------------=== Python  ===-----------------------------
     Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
     Plugin 'davidhalter/jedi-vim'               " Jedi-vim autocomplete plugin
+    Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
 
 call vundle#end()                           " required
 filetype on
@@ -209,6 +209,7 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_enable_signs=1
 let g:syntastic_check_on_wq=0
 let g:syntastic_aggregate_errors=1
+let g:syntastic_loc_list_height=5
 let g:syntastic_error_symbol='X'
 let g:syntastic_style_error_symbol='X'
 let g:syntastic_warning_symbol='x'
