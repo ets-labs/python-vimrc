@@ -172,14 +172,24 @@ let g:pymode_breakpoint=1
 let g:pymode_breakpoint_key='<leader>b'
 
 " syntax highlight
-let python_highlight_all=1
-let python_highlight_exceptions=1
-let python_highlight_builtins=1
-let python_slow_sync=1
 let g:pymode_syntax=1
+let g:pymode_syntax_slow_sync=1
 let g:pymode_syntax_all=1
+let g:pymode_syntax_print_as_function=g:pymode_syntax_all
+let g:pymode_syntax_highlight_async_await=g:pymode_syntax_all
+let g:pymode_syntax_highlight_equal_operator=g:pymode_syntax_all
+let g:pymode_syntax_highlight_stars_operator=g:pymode_syntax_all
+let g:pymode_syntax_highlight_self=g:pymode_syntax_all
 let g:pymode_syntax_indent_errors=g:pymode_syntax_all
+let g:pymode_syntax_string_formatting=g:pymode_syntax_all
 let g:pymode_syntax_space_errors=g:pymode_syntax_all
+let g:pymode_syntax_string_format=g:pymode_syntax_all
+let g:pymode_syntax_string_templates=g:pymode_syntax_all
+let g:pymode_syntax_doctests=g:pymode_syntax_all
+let g:pymode_syntax_builtin_objs=g:pymode_syntax_all
+let g:pymode_syntax_builtin_types=g:pymode_syntax_all
+let g:pymode_syntax_highlight_exceptions=g:pymode_syntax_all
+let g:pymode_syntax_docstrings=g:pymode_syntax_all
 
 " highlight 'long' lines (>= 80 symbols) in python files
 augroup vimrc_autocmds
