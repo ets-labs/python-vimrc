@@ -6,6 +6,9 @@ wrapper() {
   BLUE="\033[0;36m"
   NORMAL="\033[0m"
 
+  REPO_HTTPS="https://github.com/ets-labs/python-vimrc.git"
+  VUNDLE_HTTPS="https://github.com/VundleVim/Vundle.vim.git"
+
 echo "${BLUE}"
 cat << "HELLO_TEXT"
                           iiii
@@ -44,14 +47,14 @@ echo "${NORMAL}"
   # precedence over umasks except for filesystems mounted with option "noacl".
   umask g-w,o-w
 
-  printf "${BLUE}%s${NORMAL}\n" "Cloning vimrc..."
+  printf "${BLUE}%s${NORMAL}\n" "Cloning vimrc from ${REPO_HTTPS}"
 
   hash git >/dev/null 2>&1 || {
     printf "${RED}%s${NORMAL}\n" "Error: git is not installed."
     exit 1
   }
 
-  env git clone --depth=1 https://github.com/ets-labs/vimrc.git $VIM || {
+  env git clone --depth=1 $REPO_HTTPS $VIM || {
     printf "${RED}%s${NORMAL}\n" "Error: git clone of vimrc repo failed."
     exit 1
   }
@@ -68,11 +71,11 @@ echo "${NORMAL}"
 
   if [ ! -d "$VIM/bundle/Vundle.vim" ]; then
       printf "${BLUE}%s${NORMAL}\n" "Installing Vundle..."
-      env git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git "$VIM/bundle/Vundle.vim"
+      env git clone --depth=1 $VUNDLE_HTTPS "$VIM/bundle/Vundle.vim"
   fi
-  
+
   if [ ! -f $VIM/colors/wombat256mod.vim ]; then
-      if [ ! -d $VIM/colors/ ]; then 
+      if [ ! -d $VIM/colors/ ]; then
           mkdir -p $VIM/colors
       fi
       wget 'http://www.vim.org/scripts/download_script.php?src_id=13400' -O $VIM/colors/wombat256mod.vim

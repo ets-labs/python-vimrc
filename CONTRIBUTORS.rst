@@ -2,4 +2,4 @@
 ===================
 
 + Roman Mogilatov
-+ Sergii Buinytskyi
++ Sergii [boonya] Buinytskyi
