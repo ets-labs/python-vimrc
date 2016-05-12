@@ -148,6 +148,11 @@ let g:riv_disable_folding=1
 " omnicomplete
 set completeopt-=preview                    " remove omnicompletion dropdown
 
+" python executables for different plugins
+let g:pymode_python='python'
+let g:syntastic_python_python_exec='python'
+let g:jedi#force_py_version=2
+
 " rope
 let g:pymode_rope=0
 let g:pymode_rope_completion=0
