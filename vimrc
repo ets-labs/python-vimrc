@@ -229,4 +229,4 @@ let g:syntastic_error_symbol='X'
 let g:syntastic_style_error_symbol='X'
 let g:syntastic_warning_symbol='x'
 let g:syntastic_style_warning_symbol='x'
-let g:syntastic_python_checkers = ['flake8', 'pydocstyle', 'python']
+let g:syntastic_python_checkers=['flake8', 'pydocstyle', 'python']
