@@ -17,7 +17,7 @@ You can install it by using CLI just have next command executed
 
 .. code-block:: bash
 
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ets-labs/python-vimrc/master/setup.sh)"
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/ets-labs/python-vimrc/master/init.sh)" [install|help]
 
 During execution of init script do not worry about error messages. When it
 occurs just press enter and wait till all plugins are installed.
