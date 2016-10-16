@@ -211,7 +211,8 @@ let g:pymode_folding=0
 let g:pymode_indent=1
 
 " code running
-let g:pymode_run=0
+let g:pymode_run=1
+let g:pymode_run_bind='<F5>'
 
 " jedi-vim
 let g:jedi#popup_select_first=0             " Disable choose first option on autocomplete
