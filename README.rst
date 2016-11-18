@@ -16,7 +16,7 @@ Requirements
 How does it look?
 -----------------
 
-![img](https://raw.githubusercontent.com/wiki/ets-labs/python-vimrc/img/screenshot.png)
+.. image:: https://github.com/ets-labs/python-vimrc/wiki/img/screenshot.png
 
 Installation
 ------------
@@ -33,5 +33,21 @@ occurs just press enter and wait till all plugins are installed.
 Key bindings
 ============
 
-Use standard VIM and installed plugins key bindings.
+This configuration tends to use standard VIM and installed plugins key 
+bindings, but there are some custom key bindings as well:
 
+.. code::
+
+    # Common key bindings:
+
+    nmap <F9>       # Jump to the previous buffer
+    nmap <F10>      # Jump to the next buffer
+
+    nmap <leader>q  # Delete buffer
+    nmap "          # Toggle NERDTree buffer 
+
+    # Python mode key bindings:
+
+    let g:pymode_doc_key='K'
+    let g:pymode_breakpoint_key='<leader>b'
+    let g:pymode_run_bind='<F5>'
