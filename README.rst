@@ -38,7 +38,7 @@ Current bundle use one of the most comprehensive plugins for autocompletion -
 YouCompleteMe autocompletion plugin requires additional installation that 
 depends on environment and functionality you want to have. Detailed 
 instructions could be found on plugin page: 
-`Valloric/YouCompleteMe <https://github.com/Valloric/YouCompleteMe>`_.
+`Valloric/YouCompleteMe <https://github.com/Valloric/YouCompleteMe#installation>`_.
 
 .. note::
 
