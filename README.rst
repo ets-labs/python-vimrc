@@ -40,13 +40,13 @@ depends on environment and functionality you want to have. Detailed
 instructions could be found on plugin page: 
 `Valloric/YouCompleteMe <https://github.com/Valloric/YouCompleteMe#installation>`_.
 
-.. note::
 
-    Installation for Mac OS with support of clang compiler looks like this:
+**Note:** Installation for Mac OS with support of clang compiler looks like 
+this:
 
-   .. code-block:: bash
+.. code-block:: bash
 
-     ./install.py --clang-completer
+  ./install.py --clang-completer
 
 
 Key bindings
