@@ -70,3 +70,6 @@ bindings, but there are some custom key bindings as well:
     let g:pymode_doc_key='K'
     let g:pymode_breakpoint_key='<leader>b'
     let g:pymode_run_bind='<F5>'
+
+    nmap <leader>g :YcmCompleter GoTo<CR>
+    nmap <leader>d :YcmCompleter GoToDefinition<CR>

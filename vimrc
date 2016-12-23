@@ -232,3 +232,5 @@ let g:syntastic_python_checkers=['flake8', 'pydocstyle', 'python']
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf='~/.vim/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0
+nmap <leader>g :YcmCompleter GoTo<CR>
+nmap <leader>d :YcmCompleter GoToDefinition<CR>
