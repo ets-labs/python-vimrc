@@ -1,4 +1,3 @@
-
 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 "                                                                              "
 "                       __   _ _ _ __ ___  _ __ ___                            "
@@ -48,10 +47,10 @@ call vundle#begin()
     Plugin 'tpope/vim-commentary'               " Comment stuff out
     Plugin 'mitsuhiko/vim-sparkup'              " Sparkup(XML/jinja/htlm-django/etc.) support
     Plugin 'Rykka/riv.vim'                      " ReStructuredText plugin
+    Plugin 'Valloric/YouCompleteMe'             " Autocomplete plugin
 
     "-------------------=== Python  ===-----------------------------
     Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
-    Plugin 'davidhalter/jedi-vim'               " Jedi-vim autocomplete plugin
     Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
 
 call vundle#end()                           " required
@@ -91,6 +90,9 @@ set backspace=indent,eol,start              " backspace removes all (indents, EO
 set scrolloff=10                            " let 10 lines before/after cursor during scroll
 
 set clipboard=unnamed                       " use system clipboard
+
+set exrc                                    " enable usage of additional .vimrc files from working directory
+set secure                                  " prohibit .vimrc files to execute shell, create files, etc...
 
 "=====================================================
 "" Tabs / Buffers settings
@@ -151,7 +153,6 @@ set completeopt-=preview                    " remove omnicompletion dropdown
 " python executables for different plugins
 let g:pymode_python='python'
 let g:syntastic_python_python_exec='python'
-let g:jedi#force_py_version=2
 
 " rope
 let g:pymode_rope=0
@@ -199,9 +200,10 @@ let g:pymode_syntax_docstrings=g:pymode_syntax_all
 " highlight 'long' lines (>= 80 symbols) in python files
 augroup vimrc_autocmds
     autocmd!
-    autocmd FileType python,rst highlight Excess ctermbg=DarkGrey guibg=Black
-    autocmd FileType python,rst match Excess /\%81v.*/
-    autocmd FileType python,rst set nowrap
+    autocmd FileType python,rst,c,cpp highlight Excess ctermbg=DarkGrey guibg=Black
+    autocmd FileType python,rst,c,cpp match Excess /\%81v.*/
+    autocmd FileType python,rst,c,cpp set nowrap
+    autocmd FileType python,rst,c,cpp set colorcolumn=80
 augroup END
 
 " code folding
@@ -213,11 +215,6 @@ let g:pymode_indent=1
 " code running
 let g:pymode_run=1
 let g:pymode_run_bind='<F5>'
-
-" jedi-vim
-let g:jedi#popup_select_first=0             " Disable choose first option on autocomplete
-let g:jedi#show_call_signatures=0           " Show call signatures
-let g:jedi#popup_on_dot=1                   " Enable autocomplete on dot
 
 " syntastic
 let g:syntastic_always_populate_loc_list=1
@@ -231,3 +228,7 @@ let g:syntastic_style_error_symbol='X'
 let g:syntastic_warning_symbol='x'
 let g:syntastic_style_warning_symbol='x'
 let g:syntastic_python_checkers=['flake8', 'pydocstyle', 'python']
+
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf='~/.vim/ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf=0
