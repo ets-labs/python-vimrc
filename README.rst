@@ -59,6 +59,9 @@ bindings, but there are some custom key bindings as well:
 
     # Common key bindings:
 
+    inoremap jj     # Esc alternative
+    inoremap jk     # Esc alternative
+
     nmap <F9>       # Jump to the previous buffer
     nmap <F10>      # Jump to the next buffer
 

@@ -94,6 +94,10 @@ set clipboard=unnamed                       " use system clipboard
 set exrc                                    " enable usage of additional .vimrc files from working directory
 set secure                                  " prohibit .vimrc files to execute shell, create files, etc...
 
+" Additional mappings for Esc (useful for MacBook with touch bar)
+inoremap jj <Esc>
+inoremap jk <Esc>
+
 "=====================================================
 "" Tabs / Buffers settings
 "=====================================================
