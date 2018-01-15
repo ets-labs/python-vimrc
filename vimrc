@@ -166,7 +166,7 @@ let g:pymode_rope_guess_project=0
 
 " documentation
 let g:pymode_doc=0
-let g:pymode_doc_key='K'
+let g:pymode_doc_bind='K'
 
 " lints
 let g:pymode_lint=0
