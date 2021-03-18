@@ -140,6 +140,7 @@ nmap " :NERDTreeToggle<CR>
 "" SnipMate settings
 "=====================================================
 let g:snippets_dir='~/.vim/vim-snippets/snippets'
+let g:snipMate = {'snippet_version' : 1}
 
 "=====================================================
 "" Riv.vim settings
